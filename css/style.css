@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Shadows+Into+Light&display=swap");
+
+body {
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FARVER VARIABLER */
+:root {
+  --offwhite: #e4e4e4;
+  --white: #ffffff;
+  --black: #00000;
+  --lightblue: #90c7ea;
+  --blue: #013155;
+  --cobalt: #2ea1e9;
+}
+
+.wrap {
+  background-color: var(--lightblue);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  font-family: "Shadows Into Light", cursive;
+  color: var(--blue);
+  padding: 180px 150px;
+}
+
+.left img {
+  width: 300px;
+  height: 150px;
+}
+
+.btn1 a {
+  background-color: var(--blue);
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 3%;
+  margin-left: 28%;
+}
+
+.btn1 a:hover {
+  background-color: var(--lightblue);
+  transition: 0.3s ease;
+  color: #013155;
+  border: 2.5px solid #2ea1e9;
+}
+
+.right {
+  justify-content: right;
+  margin-left: 6%;
+}
+
+#billede {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(191, 221, 247, 0.418),
+      rgba(185, 220, 248, 0.986),
+      rgba(245, 249, 250, 0)
+    ),
+    url(../images/brunch.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 52.1vw;
+  height: 45vw;
+}
+
+#citat {
+  position: absolute;
+  top: 58%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  color: var(--blue);
+  font-size: 30px;
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* CIRCLE */
+
+.circle {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 38vh;
+  background-color: var(--blue);
+}
+
+.circle img {
+  width: 75vw;
+  margin-right: 2.5%;
+}
+
+.circle .circletext {
+  position: absolute;
+  color: var(--white);
+  font-size: 1.5rem;
+  user-select: none;
+  pointer-events: none;
+  font-family: "IBM Plex Mono", monospace;
+  animation: animate 12.5s linear infinite;
+  margin-top: 10%;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle .circletext span {
+  position: absolute;
+  top: -100px;
+  display: inline-block;
+  text-transform: uppercase;
+  transform-origin: 0 100px;
+}
+
+/* ABOUT ALICE'S RESTAURANT */
+
+.om-wrap {
+  display: flex;
+  max-width: 100%;
+  padding: 20px 40px;
+  color: var(--blue);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.om-tekst h4 {
+  font-size: 2rem;
+  font-family: "Shadows Into Light", cursive;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.om-tekst {
+  padding-left: 15%;
+  font-size: 1rem;
+  margin-bottom: 5%;
+}
+
+.om-tekst p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 800;
+}
+
+#myVideo {
+  display: flex;
+  width: 550px;
+}
+
+/* MENUER */
+
+.menu-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--lightblue);
+  justify-content: center;
+  color: var(--blue);
+}
+
+.menu-header h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
+  font-size: 4rem;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.menu-header {
+  flex-wrap: nowrap;
+  font-family: "Shadows Into Light", cursive;
+}
+
+#menubtn a {
+  background-color: var(--blue);
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 3%;
+}
+
+.menubtn a:hover {
+  background-color: var(--lightblue);
+  transition: 0.3s ease;
+  color: #013155;
+  border: 2.5px solid #2ea1e9;
+}
+
+#menubtn {
+  background-color: var(--blue);
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 4%;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#menubtn:hover {
+  background-color: var(--lightblue);
+  transition: 0.3s ease;
+  color: #013155;
+  border: 2.5px solid #2ea1e9;
+}
+
+.menuer {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+#brunch {
+  background-color: #013155;
+  color: var(--white);
+  border-radius: 10%;
+  border: 2px solid var(--white);
+  margin: 3.5vw;
+  padding: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.8rem;
+  box-shadow: 0px 8px 16px 0px rgba(10, 60, 124, 0.2);
+}
+
+#brunch h2 {
+  font-family: "Shadows Into Light", cursive;
+  padding-top: 5%;
+}
+
+#frokost {
+  background-color: #013155;
+  color: var(--white);
+  border-radius: 8%;
+  border: 2px solid var(--white);
+  margin: 4vw;
+  padding: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.8rem;
+  box-shadow: 0px 8px 16px 0px rgba(10, 60, 124, 0.2);
+}
+
+#frokost h2 {
+  font-family: "Shadows Into Light", cursive;
+  padding-top: 5%;
+}
+
+#drikkevarer {
+  background-color: #013155;
+  color: var(--white);
+  border-radius: 8%;
+  border: 2px solid var(--white);
+  margin: 4vw;
+  padding: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.8rem;
+  box-shadow: 0px 8px 16px 0px rgba(10, 60, 124, 0.2);
+}
+
+#drikkevarer h2 {
+  font-family: "Shadows Into Light", cursive;
+  padding-top: 5%;
+}
+
+/* CONTACT */
+
+.contact-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--blue);
+}
+
+.contact {
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: "IBM Plex Mono", monospace;
+  border: 1px solid var(--blue);
+  border-radius: 2px;
+  box-shadow: 0px 8px 16px 0px rgba(10, 60, 124, 0.2);
+  padding: 40px 40px;
+  background-color: var(--white);
+}
+
+.contact h2 {
+  font-family: "Shadows Into Light", cursive;
+  margin-bottom: 5%;
+  font-size: 2rem;
+  border-bottom: 2px solid var(--blue);
+  color: var(--blue);
+}
+
+.contact h4 {
+  font-size: 1.2rem;
+  font-family: "Shadows Into Light", cursive;
+  color: var(--blue);
+}
+
+#idag h4 {
+  color: var(--cobalt);
+}
+
+#åbningstider {
+  list-style: none;
+}
+
+/* FORMULAR */
+
+#radio {
+  display: none;
+}
+#tjek {
+  display: none;
+}
+
+#lastField {
+  display: none;
+}
+
+.formular {
+  margin-right: 10%;
+  margin-top: 8%;
+  font-family: "Shadows Into Light", cursive;
+  padding: 40px 40px;
+}
+
+.formular h1 {
+  color: var(--white);
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+fieldset {
+  border: none;
+  color: var(--white);
+}
+
+.alleKnapperne {
+  background-color: var(--blue);
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: white;
+  margin-right: 85%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 4%;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+.alleKnapperne:hover {
+  background-color: var(--lightblue);
+  transition: 0.3s ease;
+  color: #013155;
+  border: 2.5px solid #2ea1e9;
+}
+
+.alleKnapperne a {
+  background-color: var(--blue);
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 3%;
+  margin-left: 28%;
+  cursor: pointer;
+}
+
+.alleKnapperne a:hover {
+  background-color: var(--lightblue);
+  transition: 0.3s ease;
+  color: #013155;
+  border: 2.5px solid #2ea1e9;
+}
+
+legend h2 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid var(--lightblue);
+  background-color: var(--blue);
+}
+
+#navn {
+  font-family: "IBM Plex Mono", monospace;
+}
+input[value=""] {
+  color: var(--white);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+input[type="date"] {
+  border: 2px solid var(--lightblue);
+  background-color: var(--blue);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  cursor: pointer;
+}
+
+label {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--white);
+}
+
+input[type="submit"] {
+  background-color: var(--blue);
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 3%;
+  cursor: pointer;
+  font-family: "Shadows Into Light", cursive;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--lightblue);
+  transition: 0.3s ease;
+  color: #013155;
+  border: 2.5px solid #2ea1e9;
+}

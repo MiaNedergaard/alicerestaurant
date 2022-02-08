@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mad, menu, drikke, forretter, hovedretter, desserter, frokost, brunch">
+    <title>Alice's Restaurant</title>
+    <meta name="description" content="Alice's Restaurant - Mad med sjæl">
+    <meta name="author" content="Alice's Restaurant">
+    <link rel="shortcut icon" href="images/..." type="image/x-icon">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsiv.css">
+    <script src="https://kit.fontawesome.com/0bdbe266da.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--NAVBAR MED DROPDOWN-->
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+            
+            <ul>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">MENU</button>
+
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#brunch">BRUNCH</a>
+                        <a href="#frokost">FROKOST</a>
+                        <a href="#drikkevarer">DRIKKEVARER</a>
+                    </div>
+                </div> 
+
+                
+                <li><a href="#brunch">TAKEAWAY</a></li>
+
+                <li><a href="#oplysninger">BOOK BORD</a></li>
+
+                <li><a href="#oplysninger">KONTAKT</a></li>
+
+            </ul>
+
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+
+    </nav>
+
+    <nav class="mobile-nav">
+        <a href="#brunch">MENU</a>
+        <a href="#brunch">TAKEAWAY</a>
+        <a href="#oplysninger">BOOK BORD</a>
+        <a href="#oplysninger">KONTAKT</a>
+    </nav>
+
+    <!--MAIN LANDINGPAGE-->
+
+    <main>
+        <div class="wrap">
+            <section class="left">
+                <img src="images/illustration.svg" alt="Illustration">
+                <h2>Brunch, Frokost og meget mere...</h2>
+                <div class="btn1">
+                    <a class="button" href="#brunch">Se menu</a>
+                </div>
+            </section>
+
+            <section class="right">
+                
+                <div id="citat"></div>
+                <div id="billede"></div>
+                
+            </section>
+
+        </div>
+
+        <!--CIRCLESECTION-->
+
+        <div class="circle">
+            <h2 class="circletext">ALICE - RESTAURANT - </h2><img src="images/icon.svg" alt="">
+        </div>
+
+        <!--ABOUT PAGE-->
+
+        <article class="om-wrap">
+            <div class="video">
+                <video autoplay muted loop id = 'myVideo'>
+                    <source src="video/alice.mp4" type="video/mp4">  
+                </video>
+                <video autoplay muted loop id = 'myVideo'>
+                    <source src="video/alice1.mp4" type="video/mp4">  
+                </video>
+            </div>
+            
+            <div class="om-tekst">
+                <h4>En perle placeret midt i Latinerkvarteret i Aarhus C</h4>
+                <p>I hyggelige og finder du Alice Restaurant. I hjertet af Latinerkvarteret kan du finde alt hvad du søger, når du trænger til en spiselig forkælelse. Vi har alt lige fra brunch serveret over dejlige morgentoner og rigelig kaffe.<br> <br> 
+
+                    Små eller store anretninger til din frokost og ikke mindst når dag bliver til aften, og vi langer læskende drikke over baren, som du kan nyde til et gedigent aftensmåltid, eller til aftenen hvor et glas ikke er nok.<br> <br>
+                        
+                    Nyd det inde i cafeen, eller træk ud i vore dejlige gårdhave, hvor hyggen straks mærkes, hvis vi selv skal sige det. 
+                </p>
+            </div>
+           
+        </article>
+        
+        <!--MENU-->
+
+        <section class="menu-wrap">
+            <div class="menu-header">
+                <h1>Menu</h1>
+
+                <button id="menubtn" onclick="myBrunch()">Brunch</button>
+                <button id="menubtn" onclick="myFrokost()">Frokost</button>
+                <button id="menubtn" onclick="myDrikkevarer()">Drikkevarer</button>
+              
+            </div>
+            
+            <div class="menuer">  
+             
+                <div id="brunch">
+                    <h2>Brunch</h2>
+                    <li>Mandag til fredag 8:30 – 12:30 </li>
+                    <li>Lørdag og søndag 8:30 – 13:00</li>
+                    <p>På Alice Restaurant vælger du selv elementerne på dit bræt. <br>
+                        3 stk. 99 kr. – 5 stk. 139 kr. – 7 stk. 169 kr. <br> <br>
+                    
+                        Du må gerne vælge den samme ret flere gange.
+                    </p>
+                </div>
+
+                <div id="frokost">
+                <h2>Frokost</h2>
+                    <li>Mandag til fredag 12:30 – 16:00 </li>
+                    <li>Lørdag og søndag 12:30 – 15:00</li>
+                    <p>På Alice Restaurant vælger du selv elementerne på dit bræt. <br>
+                     2 stk. 199 kr. – 3 stk. 239 kr. – 4 stk. 289 kr. <br> <br>
+                    
+                        Du må gerne vælge den samme ret flere gange.
+                    </p>
+                </div>
+
+                <div id="drikkevarer">
+                    <h2>Drikkevarer</h2>
+                    <p>Om du er til kolde eller varme drikke, så har vi helt sikkert det perfekte match til netop at slukke din tørst.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!--CONTACT AND FORMULAR-->
+        
+        <section class="contact-wrap">
+            <div class="contact">
+                <h2>Kontakt os her</h2>
+                <div id="oplysninger"></div> <br>
+                <h4><b>Åbningstider:</b></h4>
+                <div id="åbningstider"></div> <br>
+                <div id="idag"></div>
+            </div>
+
+            <div class="formular">
+
+                <h1>Book Bord og vær sikret en hyggelig stund !</h1>
+
+                <form action="action.html">
+
+                    <fieldset id="navn">
+                        <legend><h2>Step 1 ud af 3 <br> Udfyld navn, email og tlf:</h2></legend>
+                        Navn: <input type="text" id="Name" name="Name" value=""> <br>
+                        E-mail: <input type="text" name="Email" value=""> <br>
+                        Tlf: <input type="text" name="Tlf" value="">
+
+                        <div id="btn1" class="alleKnapperne">Næste</div>
+                    </fieldset>
+
+                    <fieldset id="radio">
+
+                        <legend><h2>Step 2 ud af 3 <br>Hvornår vil i komme og hvor mange bliver i?</h2></legend>
+                        <label for="dato">Dato:</label>
+                        <input type="date" id="dato" name="dato"><br><br>
+                        <input type="radio" id="valg1" name="fav_language" value="personer">
+                        <label for="valg1">2 - 4 personer</label><br>
+                        <input type="radio" id="valg2" name="fav_language" value="Personer">
+                        <label for="valg2">6 - 8 personer</label><br>
+                        <input type="radio" id="valg3" name="fav_language" value="Personer">
+                        <label for="valg3">10 + personer</label>
+        
+                        <div id="btn2" class="alleKnapperne">Næste</div>
+                    </fieldset>
+
+                    <fieldset id="tjek">
+                    
+                        <legend><h2>Step 3 ud af 3 <br>Noget vi skal tage særligt hensyn til?</h2></legend>
+                        <input type="checkbox" id="allergi1" name="allergi1" value="Nødder">
+                        <label for="allergi1"> Nødder</label><br>
+                        <input type="checkbox" id="allergi2" name="allergi2" value="Gluten">
+                        <label for="allergi2"> Gluten</label><br>
+                        <input type="checkbox" id="allergi3" name="allergi3" value="Laktose">
+                        <label for="allergi3"> Laktose</label><br>
+                        <input type="checkbox" id="allergi4" name="allergi4" value="Veganer">
+                        <label for="allergi4"> Veganer</label> <br>
+                        <input type="checkbox" id="allergi5" name="allergi5" value="Vegetar">
+                        <label for="allergi5"> Vegetar</label>
+            
+                        <div id="btn3" class="alleKnapperne">Næste</div>
+            
+                    </fieldset>
+            
+                    <fieldset id="lastField">
+            
+                        <legend><h2>Din reservation er nu gennemført</h2></legend>
+                        <p>Vi glæder os til at se jer!</p>
+                        <input type="submit" value="Se reservation">
+            
+                    </fieldset> 
+
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-tekst">
+                    <div id="footerInfo"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                </div>
+                
+
+                <div class="footer-tekst">
+                    <h4>Info</h4>
+                    <ul id="information"></ul>
+                </div>
+
+                <div class="footer-tekst"><h4>Medarbejdere</h4>
+                    <ul id="medarbejdere"></ul>
+                </div>
+
+                <div class="footer-tekst">
+                    <h4>Følg os her</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div id="date"></div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+   
+
+    <script src="js/js.js"></script> 
+</body>
+</html>

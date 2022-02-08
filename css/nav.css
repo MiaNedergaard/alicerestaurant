@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Shadows+Into+Light&display=swap");
+
+body {
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FARVER VARIABLER */
+:root {
+  --offwhite: #e4e4e4;
+  --white: #ffffff;
+  --black: #00000;
+  --lightblue: #90c7ea;
+  --blue: #013155;
+  --cobalt: #2ea1e9;
+}
+
+/* NAVBAR */
+
+nav ul li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 15px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--white);
+  font-family: "Shadows Into Light", cursive;
+  padding: 0.7rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+.navbar a {
+  font-size: 20px;
+  color: var(--blue);
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+ul .social-links a {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-radius: 50%;
+  color: var(--blue);
+  transition: all 0.3s ease;
+}
+ul .social-links a:hover {
+  color: var(--white);
+  background-color: var(--lightblue);
+}
+
+/* DROPDOWN MENU*/
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: var(--blue);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  color: var(--cobalt);
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(10, 60, 124, 0.2);
+  z-index: 1;
+  border-radius: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--cobalt);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(156, 213, 247);
+  opacity: 0.5;
+}
+
+.show {
+  display: block;
+}
+
+/* HAMBURGERMENU*/
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 25px;
+  float: right;
+  margin: 0 25px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 98;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--blue);
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(156, 213, 247);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  padding-top: 120px;
+  transition: 0.4s;
+  z-index: 97;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background-color: var(--white);
+  color: var(--cobalt);
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(10, 60, 124, 0.2);
+  transition: 0.2s;
+}
+
+.mobile-nav a:hover {
+  background-color: var(--blue);
+}

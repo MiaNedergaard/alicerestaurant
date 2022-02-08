@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Shadows+Into+Light&display=swap");
+body {
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FARVER VARIABLER */
+:root {
+  --offwhite: #e4e4e4;
+  --white: #ffffff;
+  --black: #00000;
+  --lightblue: #90c7ea;
+  --blue: #013155;
+}
+
+/* FOOTER */
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: var(--lightblue);
+  padding: 65px 0;
+}
+#footerInfo {
+  margin-top: 4%;
+  color: var(--blue);
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  margin-right: 5%;
+}
+
+#footerInfo img {
+  width: 10vw;
+}
+
+.footer-tekst {
+  font-family: "IBM Plex Mono", monospace;
+  width: 25%;
+  padding: 0 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.footer-tekst h4 {
+  font-size: 20px;
+  color: var(--blue);
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 1mm;
+}
+
+.footer-tekst ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-tekst ul li a {
+  font-size: 10px;
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--white);
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-tekst ul li a:hover {
+  color: white;
+  padding-left: 8px;
+}
+.footer-tekst .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+.footer-tekst .social-links a:hover {
+  color: var(--blue);
+  background-color: var(--offwhite);
+}

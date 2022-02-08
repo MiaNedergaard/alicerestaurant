@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Shadows+Into+Light&display=swap");
+
+body {
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FARVER VARIABLER */
+:root {
+  --offwhite: #e4e4e4;
+  --white: #ffffff;
+  --black: #00000;
+  --lightblue: #90c7ea;
+  --blue: #013155;
+  --cobalt: #2ea1e9;
+}
+
+/*  RESPONSIV NAVBAR MOBIL OG TABLET*/
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+}
+
+/*RESPONSIV FOOTER MOBIL OG TABLET*/
+@media (max-width: 574px) {
+  /* LANDINGPAGE */
+
+  .wrap {
+    justify-content: center;
+  }
+
+  #billede {
+    display: none;
+  }
+
+  #citat {
+    display: none;
+  }
+
+  /* CIRCLE */
+
+  .circle .circletext {
+    margin-top: 40%;
+    width: 5px;
+  }
+
+  /* OM ALICE */
+
+  #myVideo {
+    max-width: 400px;
+  }
+
+  .om-wrap {
+    flex-wrap: wrap;
+  }
+
+  .om-tekst {
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
+
+  /* MENUER*/
+
+  #brunch {
+    border-radius: 2px;
+  }
+
+  #frokost {
+    border-radius: 2px;
+  }
+
+  #drikkevarer {
+    border-radius: 2px;
+  }
+
+  /* KONTAKT OG FORMULAR */
+
+  .contact {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+  }
+
+  /* FOOTER */
+
+  .container {
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer-tekst {
+    width: 90%;
+    margin-top: 5%;
+  }
+}
